@@ -1,6 +1,6 @@
 # radar-infrastructure
 
-Repository for radar-demo infrastructur: init project locally and run in docker.
+Repository for running radar-demo: init project locally and run it in docker.
 
 ## Install radar-demo:
 * Create folder for project and clone current repo:
