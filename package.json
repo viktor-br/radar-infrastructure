@@ -1,0 +1,23 @@
+{
+  "name": "radar-infrastructure",
+  "version": "1.0.0",
+  "description": "Repository for running radar-demo: init project locally and run it in docker.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viktor-br/radar-infrastructure.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/viktor-br/radar-infrastructure/issues"
+  },
+  "homepage": "https://github.com/viktor-br/radar-infrastructure#readme",
+  "dependencies": {
+    "amqplib": "^0.5.3",
+    "dotenv": "^6.2.0"
+  }
+}
