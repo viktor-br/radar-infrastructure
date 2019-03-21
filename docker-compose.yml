@@ -27,13 +27,8 @@ services:
     ports:
       - "4444:4000"
     environment:
-      - RADAR_CLIENT_HOST=radar-demo
-      - RADAR_CLIENT_PORT=3333
-      - RADAR_SERVER_HOST=radar-demo
-      - RADAR_SERVER_PORT=4444
       - RADAR_RABBITMQ_HOST=radar-rabbitmq
       - RADAR_RABBITMQ_PORT=5672
-      - RADAR_SERVER_RUNNING_PORT=4000
     networks:
       - radar
 
@@ -48,8 +43,8 @@ services:
     ports:
       - "3333:3000"
     environment:
-      - REACT_APP_RADAR_SERVER_HOST=radar-demo
-      - REACT_APP_RADAR_SERVER_PORT=4444
+      - REACT_APP_RADAR_WS_URI=ws://radar-demo:4444/graphql
+      - REACT_APP_RADAR_URI=http://radar-demo:4444/graphql
     links:
       - server
     networks:
